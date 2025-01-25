@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ActivityTracker.Models.Activities>
+
+<h1>List of Activities</h1>
+
+<table class="text-black table-bordered border-dark align-content-center border-3 m-3">
+	<tr>
+		<th>Name</th>
+		@foreach (var item in Model)
+		{
+			<td>@item.Name</td>
+		}
+	</tr>
+	<tr>
+		<th>Date</th>
+		@foreach (var item in Model)
+		{
+			<td>@item.Date</td>
+		}
+	</tr>
+	<tr>
+		<th>Summary</th>
+		@foreach (var item in Model)
+		{
+			<td>@item.Summary</td>
+		}
+	</tr>
+</table>
+
+
+
+

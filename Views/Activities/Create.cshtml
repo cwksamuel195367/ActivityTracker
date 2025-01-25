@@ -1,0 +1,12 @@
+﻿@model ActivityTracker.Models.Activities
+
+	<h1>Create your new Activity here</h1>
+<form method="POST" asp-action="Create">
+	<h3>Activity Name:</h3>
+	<input type="text" asp-for="Name" />
+	<h3>Date:</h3>
+	<input type="date" asp-for="Date" />
+	<h3>Summary:</h3>
+	<input type="text" asp-for="Summary"/><br />
+	<input type="submit" />
+</form>
